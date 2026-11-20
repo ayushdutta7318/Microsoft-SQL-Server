@@ -17,7 +17,7 @@ SELECT * FROM persons;
 to create meta data of table-> right click table name -> script table as -> create to -> new query editor window
 */
 
--- DDL - ALTER command
+-- DDL - ALTER command - ALTER used to to alter the columns, not the values in a column.
 /*Add a new coln called email to the persons table*/
 ALTER TABLE persons 
 ADD email VARCHAR(100) NOT NULL UNIQUE;

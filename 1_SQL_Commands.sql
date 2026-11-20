@@ -41,3 +41,13 @@ SELECT country, AVG(score) AS avg_score FROM dbo.customers WHERE score != 0 GROU
 
 -- DISTINCT - Removes duplicates
 SELECT DISTINCT country FROM dbo.customers;
+SELECT DISTINCT * FROM dbo.customers;
+
+-- Filter using TOP: select top mentioned rows
+SELECT TOP(3) * FROM dbo.customers;
+
+/*Select top 3 customers with highest scores.*/
+SELECT TOP(3) * FROM customers ORDER BY score DESC;
+
+-- Select top 3 recent orders:
+SELECT TOP 3 * FROM orders ORDER BY order_date DESC;
